@@ -1,0 +1,20 @@
+{
+  "name": "dust-js-demo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mati1979/dust-js-demo",
+  "authors": [
+    "Mateusz Szczap <mateusz.szczap@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dustjs": "~0.3.0",
+    "jquery": "~2.0.3"
+  }
+}
