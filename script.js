@@ -1,6 +1,12 @@
 $(document).ready(function() {
-    var compiled = dust.compile("Hello {name}!", "intro");
-    dust.loadSource(compiled);
+
+    dust.onLoad = function(templateName, callback) {
+        // this will load a template with [name].html in the folder templates
+        // callback is an internal dust.js function
+        $.get(["templates/", ".html"].join(templateName), function(data) {
+            callback(undefined, data);
+        }, "html"); 
+    };
 
     $("#asyncRender").click(function() {
         var context = Object();
@@ -11,10 +17,10 @@ $(document).ready(function() {
                 $(".title").text(data);
             })
             .on("end", function() {
-                //console.log("I'm finished!");
+                console.log("I'm finished!");
             })
             .on("error", function(err) {
-                //console.log("Something terrible happened:" + err);
+                console.log("Something terrible happened:" + err);
             });
     });
 

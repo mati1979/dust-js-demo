@@ -14,7 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "dustjs": "~0.3.0",
+    "dustjs-linkedin": "2.1.0",
     "jquery": "~2.0.3"
   }
 }
