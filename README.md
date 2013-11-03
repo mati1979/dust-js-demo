@@ -9,6 +9,6 @@ dust-js-demo
 
 ### run example via:
 
-cd dust-js-demo
-python -m SimpleHTTPServer
-navigate your browser to http://localhost:8000
+* cd dust-js-demo
+* python -m SimpleHTTPServer
+* navigate your browser to http://localhost:8000
